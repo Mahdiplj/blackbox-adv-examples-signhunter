@@ -8,7 +8,8 @@ from __future__ import print_function
 import os
 import sys
 import tarfile
-
+# Added
+sys.path.append('./')
 from utils.helper_fcts import data_path_join
 
 data_dir = data_path_join('cifar10_data')

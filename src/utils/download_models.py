@@ -9,6 +9,9 @@ import os
 import sys
 import tarfile
 import zipfile
+# Added
+import sys
+sys.path.append('./')
 
 from utils.helper_fcts import data_path_join
 
