@@ -22,6 +22,8 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 import torch as ch
+import sys
+sys.path.append('../..')
 
 from datasets.dataset import Dataset
 from utils.compute_fcts import tf_nsign, sign
