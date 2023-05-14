@@ -46,7 +46,7 @@ from attacks.blackbox.shc_attack import SHCAttack
 IS_DEBUG_MODE = False
 
 if __name__ == '__main__':
-    exp_id = 'shc_mnist_cifar_linf'
+    exp_id = 'rnd_nes_cifar10_linf'
     print("Running Experiment {} with DEBUG MODE {}".format(exp_id, IS_DEBUG_MODE))
     cfs = [
         # 'mnist_zosignsgd_linf_config.json',
@@ -59,7 +59,8 @@ if __name__ == '__main__':
         # 'mnist_bandit_l2_config.json',
         # 'cifar10_zosignsgd_linf_config.json',
         # 'cifar10_nes_linf_config.json',
-        'cifar10_sign_linf_config.json',
+        # 'cifar10_sign_linf_config.json',
+          'rnd_cifar10_nes_linf_config.json'
         # 'cifar10_bandit_linf_config.json',
         # 'cifar10_zosignsgd_l2_config.json',
         # 'cifar10_nes_l2_config.json',
