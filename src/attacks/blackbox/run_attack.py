@@ -58,8 +58,8 @@ if __name__ == '__main__':
         # 'mnist_sign_l2_config.json',
         # 'mnist_bandit_l2_config.json',
         # 'cifar10_zosignsgd_linf_config.json',
-        'cifar10_nes_linf_config.json',
-        # 'cifar10_sign_linf_config.json',
+        # 'cifar10_nes_linf_config.json',
+        'cifar10_sign_linf_config.json',
         # 'cifar10_bandit_linf_config.json',
         # 'cifar10_zosignsgd_l2_config.json',
         # 'cifar10_nes_l2_config.json',
@@ -150,7 +150,7 @@ if __name__ == '__main__':
         )
 
         # to over-ride attacker's configuration
-        #attacker.max_loss_queries = 1000
+        attacker.max_loss_queries = 1000
 
         with tf.Session(config=tf.ConfigProto(
                 allow_soft_placement=True,
