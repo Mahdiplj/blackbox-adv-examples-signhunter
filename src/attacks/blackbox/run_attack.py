@@ -57,11 +57,12 @@ if __name__ == '__main__':
         # 'mnist_nes_l2_config.json',
         # 'mnist_sign_l2_config.json',
         # 'mnist_bandit_l2_config.json',
-        'cifar10_zosignsgd_linf_config.json',
+
+        # 'cifar10_zosignsgd_linf_config.json',
         # 'cifar10_nes_linf_config.json',
         # 'cifar10_sign_linf_config.json',
-        #   'rnd_cifar10_nes_linf_config.json'
-        'cifar10_bandit_linf_config.json',
+        # 'cifar10_bandit_linf_config.json',
+          "cifar10_simple_linf_config.json"
         # 'cifar10_zosignsgd_l2_config.json',
         # 'cifar10_nes_l2_config.json',
         # 'cifar10_sign_l2_config.json',
@@ -75,23 +76,24 @@ if __name__ == '__main__':
         # 'imagenet_sign_l2_config.json',
         # 'imagenet_bandit_l2_config.json'
         # 'mnist_rand_linf_config.json',
-        'cifar10_rand_linf_config.json',
+        # 'cifar10_rand_linf_config.json',
 	    # 'imagenet_rand_linf_config.json',
 	    # 'mnist_rand_l2_config.json',
         # 'cifar10_rand_l2_config.json',
         # 'imagenet_rand_l2_config.json'
         # 'mnist_shc_linf_config.json'
-        'cifar10_shc_linf_config.json'
+        # 'cifar10_shc_linf_config.json',
         #'mnist_shc_l2_config.json'
         #'cifar10_shc_l2_config.json'
         #'imagenet_shc_linf_config.json'
         #'imagenet_shc_l2_config.json'
         #'mnist_naive_linf_config.json',
-        'cifar10_naive_linf_config.json',
+        # 'cifar10_naive_linf_config.json'
         # 'imagenet_naive_linf_config.json',
         # 'mnist_naive_l2_config.json',
         #'cifar10_naive_l2_config.json',
         # 'imagenet_naive_l2_config.json'
+        # 'rnd_cifar10_nes_linf_config.json'
     ]
 
     # create/ allocate the result json for tabulation
