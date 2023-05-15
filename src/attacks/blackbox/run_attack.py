@@ -40,6 +40,7 @@ from attacks.blackbox.sign_attack import SignAttack
 from attacks.blackbox.random_attack import RandAttack
 from attacks.blackbox.naive_attack import NaiveAttack
 from attacks.blackbox.shc_attack import SHCAttack
+from attacks.blackbox.simple_attack import SimpleAttack
 
 # to run the attacks on a quadratic function with no constraint
 # i.e. a concave fct with a single global solution
