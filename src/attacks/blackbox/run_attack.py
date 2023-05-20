@@ -47,8 +47,6 @@ from attacks.blackbox.simple_attack import SimpleAttack
 IS_DEBUG_MODE = False
 
 if __name__ == '__main__':
-    exp_id = 'rnd_nes_cifar10_linf'
-    print("Running Experiment {} with DEBUG MODE {}".format(exp_id, IS_DEBUG_MODE))
     cfs = [
         # 'mnist_zosignsgd_linf_config.json',
         # 'mnist_nes_linf_config.json',
@@ -96,6 +94,8 @@ if __name__ == '__main__':
         # 'imagenet_naive_l2_config.json'
         # 'rnd_cifar10_nes_linf_config.json'
     ]
+    exp_id = cfs[0]
+    print("Running Experiment {} with DEBUG MODE {}".format(exp_id, IS_DEBUG_MODE))
 
     # create/ allocate the result json for tabulation
     data_dir = data_path_join('blackbox_attack_exp')
@@ -142,8 +142,10 @@ if __name__ == '__main__':
         # set torch default device:
         if 'gpu' in config['device'] and ch.cuda.is_available():
             ch.set_default_tensor_type('torch.cuda.FloatTensor')
+            print("Pytorch is on GPU")
         else:
             ch.set_default_tensor_type('torch.FloatTensor')
+            print("Pytorch is not on GPU!!")
 
         saver = tf.train.Saver()
 
@@ -164,6 +166,7 @@ if __name__ == '__main__':
             saver.restore(sess, model_file)
 
             # Iterate over the samples batch-by-batch
+            # To change the batch size from 100 to 1000, we can change here!
             num_eval_examples = config['num_eval_examples']
             eval_batch_size = config['eval_batch_size']
             num_batches = int(math.ceil(num_eval_examples / eval_batch_size))

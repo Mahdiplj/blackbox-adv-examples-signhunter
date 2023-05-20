@@ -79,6 +79,8 @@ def get_model_file(config):
     """
     if 'model_dir' in config:
         model_file = tf.train.latest_checkpoint(data_path_join(config['model_dir']))
+        # Added
+        print(f"model file type is: {type(model_file)}, model file is {model_file}")
     else:
         model_file = data_path_join(config['model_file'])
     if model_file is None:
